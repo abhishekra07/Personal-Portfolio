@@ -16,15 +16,33 @@ li {
     --background-dark-color : #130F49;
     --text-color-100 : #B4B2C5;
 }
+.btn {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.section {
+    min-height: 100vh;
+}
 /* ---------------------
 Header
 -------------------------- */
-
-.header{
-    max-width: 1140px;
+.main-container {
+    max-width: 1440;
     margin: auto;
+}
+.header{
     padding: 5px 20px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+.header > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    height: 500;
+    width: 475;
 }
 
 .container {
@@ -38,6 +56,7 @@ Header
 }
 .nav-items {
     display: flex;
+    z-index:200;
 }
 
 .logo {
@@ -70,6 +89,7 @@ Header
     justify-content: space-between;
     align-items: center;
     margin: 0px;
+    z-index: 11;
 }
 li.social-icon {
     padding: 15px;
@@ -78,4 +98,187 @@ li.social-icon {
 }
 li.social-icon:hover {
     transform: translateY(-5px);
+}
+
+/* ----------------------------
+Header Content
+------------------------ */
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    min-height: 100vh;
+}
+.left-content {
+    flex: 1;
+    padding-left: 10px;
+}
+.right-content {
+    z-index: 100;
+    flex: 1;
+}
+.header-img-box img{
+    width: 100%;
+    height: 100%;
+}
+.bg-dots-box {
+    position: absolute;
+    top: 170px;
+    right: 33%;
+    animation: moveLeftRight 5s linear infinite;
+}
+@keyframes moveLeftRight {
+    0%, 100% {
+        top: 170px;
+        right: 33%;
+    }
+    50% {
+        top: 170px;
+        right: 36%;
+    }
+}
+.bg-dots-box img {
+    width:135px;
+    height: 61px;
+}
+
+.left-content h3 {
+    display: inline;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.left-content span.header-line{
+    display: inline-block;
+    margin-left: 10px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: black;
+}
+.header-top-line {
+    display: flex;
+    align-items: center;
+}
+
+.left-content h1 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.left-content h2 {
+    font-weight: normal;
+    font-size: 28px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.header-buttons {
+    margin-top: 80px;
+}
+.btn-primary {
+    cursor: pointer;
+    padding: 13px 35px;
+    background-color: var(--background-dark-color);
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+.btn-primary a {
+    color: #fff;
+}
+.btn-primary:hover {
+    transform: translateY(-5px);
+}
+.btn-secondary {
+    border: 2px solid var(--background-dark-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+.btn-secondary a {
+    color: var(--background-dark-color);
+}
+.btn-secondary:hover{
+    padding: 11px 15px;
+    background-color: var(--background-dark-color);
+}
+.btn-secondary:hover > a {
+    color: #fff;
+}
+.hire-me-btn {
+    margin-right: 20px;
+}
+.bulb {
+    transition: all 0.3s ease;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(40deg);
+    }
+    50% {
+        transform: rotate(-40deg);
+    }
+}
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.left-section {
+    /* background-color: blue; */
+    flex: 1;
+}
+.left-section img {
+    width: 100%;
+    height: 100%;
+}
+.right-section {
+    flex: 1;
+    height: 100%;
+    padding: 20px 30px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.right-section h5 {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+.right-section h2 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 38px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: -25px;
+}
+
+.right-section p {
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 17px;;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: capitalize;
+}
+.download-btn {
+    margin-top: 40px;
+}
+.heading-container {
+    display: flex;
+    align-items: center;
 }
