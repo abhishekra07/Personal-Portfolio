@@ -25,6 +25,9 @@ li {
 .section {
     min-height: 100vh;
 }
+.display-toggle {
+    display: block !important;
+}
 /* ---------------------
 Header
 -------------------------- */
@@ -281,4 +284,107 @@ Header Content
 .heading-container {
     display: flex;
     align-items: center;
+}
+.skill-section-title {
+    padding-left: 10px;
+}
+.skill-section-title h1 {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(180, 178, 197, 0.9);
+    margin-bottom: 5px;
+}
+.skill-section-title h5 {
+    font-family: Rubik, sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    color: #05364D;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+.skill {
+    flex: 1;
+    /* background-color: red; */
+}
+.skill-container {
+    /* background-color: blue; */
+    padding: 20px 50px;
+}
+.skill-header {
+    /* background-color: red; */
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+}
+.skill-icon {
+    padding: 15px;
+}
+.skill-title {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+}
+.skill-main-title span {
+    font-family: Rubik, sans-serif;
+    font-size: 38px;
+    line-height: 45px;  
+    color: #000000;
+}
+.skill-sub-title span {
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 18px;
+    color: #868594;
+}
+.skill-body {
+    /* background-color: blue; */
+    display: none;
+    position: relative;
+    max-width: 538px;
+    margin: auto;
+    /* margin-left: 82px; */
+    padding: 20px 10px;
+    transition: all 0.5s ease-in;
+}
+.backend-skill-img {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    z-index: -100;
+}
+.skill-items {
+    /* background-color: black; */
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.skill-item {
+    padding: 10px 30px;
+    margin-top: 20px;;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+}
+.frontend-skill-img {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    z-index: -100;
 }
